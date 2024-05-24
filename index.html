@@ -2,22 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/assets/logo-4745d667.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Gallery</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-ff309b2f.css">
+    <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-b11e2a50.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-4b066c51.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-4892c648.css">
   </head>
   <body>
-    <ul class="list">
-      <li class="item">
-        <a href="./page-2.html" class="link promo">Page 2</a>
-      </li>
+    <div class="container">
+      <form class="form js-form">
+        <input
+          class="input"
+          type="text"
+          name="query"
+          placeholder="Search images..."
+          autocomplete="off"
+        />
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="gallery js-gallery"></div>
+      <button class="btn load-btn hidden js-load-btn" type="submit">
+        Load more
+      </button>
+    </div>
+    <span class="loader js-loader hidden"></span>
 
-      <li class="item">
-        <a href="./page-3.html" class="link promo">Page 3</a>
-      </li>
-    </ul>
     
   </body>
 </html>
