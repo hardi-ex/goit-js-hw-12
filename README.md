@@ -1,1 +1,1 @@
-# Vanilla App Template
+# goit-js-hw-12

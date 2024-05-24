@@ -2,20 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <ul class="list">
-      <li class="item">
-        <a href="./page-2.html" class="link promo">Page 2</a>
-      </li>
+    <div class="container">
+      <form class="form js-form">
+        <input
+          class="input"
+          type="text"
+          name="query"
+          placeholder="Search images..."
+          autocomplete="off"
+        />
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <div class="gallery js-gallery"></div>
+      <button class="btn load-btn hidden js-load-btn" type="submit">
+        Load more
+      </button>
+    </div>
+    <span class="loader js-loader hidden"></span>
 
-      <li class="item">
-        <a href="./page-3.html" class="link promo">Page 3</a>
-      </li>
-    </ul>
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

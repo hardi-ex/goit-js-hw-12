@@ -1,0 +1,14 @@
+.load-btn {
+  display: block;
+  margin: 25px auto;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.iziToast > .iziToast-close {
+  background: url('../img/cancel.svg') no-repeat 50% 50% !important;
+  background-size: 16px !important;
+}
